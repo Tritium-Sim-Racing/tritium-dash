@@ -12,4 +12,4 @@ Each Module has various screens to display different data that you may find usef
 **To Enable Navigation:**
 
  1. Open Simhub and navigate to Devices => Controls
- 2. Bind Dash Actions A, B, C, and D to your desired buttons (for touchscreens, simply touch the corresponding module on the screen)
+ 2. Bind Dash Actions A, B, C, and D to your desired buttons (for touchscreens, simply touch the corresponding module as outlined above in `dash action associations` on the screen)
