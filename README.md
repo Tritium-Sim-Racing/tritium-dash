@@ -136,6 +136,6 @@ Each Module has various screens to display different data that you may find usef
 - Top Module => Dash Action D
 
 #### Dependencies
-Dahl Designs => [Download Here](https://github.com/andreasdahl1987/DahlDesignProperties/releases)
-Romain Rob iRacing Extra Properties => [Download Here
+- Dahl Designs => [Download Here](https://github.com/andreasdahl1987/DahlDesignProperties/releases)
+- Romain Rob iRacing Extra Properties => [Download Here
 ](https://drive.google.com/drive/folders/1AiIWHviD4j-_D-zgRrjJU1AFhJ_xmass)
