@@ -53,7 +53,7 @@ Each Module has various screens to display different data that you may find usef
 - Name
 - Safety Rating
 - Gap to Overall Leader
-- 
+
 **Class Leaderboard**
 
 - Position
