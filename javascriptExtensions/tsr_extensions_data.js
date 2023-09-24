@@ -1,13 +1,6 @@
-/**swap
+/**s
  * Tritium Sim Racing JavaScript Extensions
  * Please drop this file in the 'Simhub/JavascriptExtensions' folder
- */
-
-/**
- * TODO:
- * [X] change variable names in useOpponentRelativePosition and dependent functions
- * [X] rewrite the primary functions into two separate functions, the tsr and non tsr variants
- * [X] add more helper functions to reduce bloat in primary functions
  */
 
 ///////////////////////////////////////////////////////////////////////////
@@ -17,7 +10,7 @@ function tsrGetPlayerData() {
     name: $prop('PlayerName'),
     shortName: 'N/A',
     initials: $prop('IRacingExtraProperties.iRacing_Player_Initials'),
-    position: $prop('Position'),
+    position: $prop('DahlDesign.Position'),
     carNumber: $prop('IRacingExtraProperties.iRacing_Player_CarNumber'),
     classColor: $prop('IRacingExtraProperties.iRacing_Player_ClassColor'),
     iRating: $prop('IRacingExtraProperties.iRacing_Player_iRating'),
@@ -121,6 +114,11 @@ function tsrGetSessionData() {
       totalLaps: $prop('GameRawData.Telemetry.SessionLapsTotal'),
       lapsRemaining: $prop('RemainingLaps'),
       estLapsRemaining: $prop('IRacingExtraProperties.iRacing_LapsRemaining'),
+      windDirection: $prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.WindDirection'),
+      windVelocity: $prop('GameRawData.Telemetry.WindVel'),
+      airTemp: $prop('DataCorePlugin.GameData.AirTemperature'),
+      trackTemp: $prop('DataCorePlugin.GameData.RoadTemperature'),
+      trackUsage: $prop('GameRawData.SessionData.SessionInfo.Sessions01.SessionTrackRubberState'),
     },
     track: {
       totalSectors: $prop('IRacingExtraProperties.Sector_Count'),
@@ -150,14 +148,27 @@ function tsrGetCarData() {
     status: {
       fuelUnit: $prop('FuelUnit'),
       fuelRemaining: $prop('Fuel'),
+      fuelRemainingPercent: $prop('DataCorePlugin.Computed.Fuel_Percent'),
       fuelRemainingLaps: $prop('DataCorePlugin.Computed.Fuel_RemainingLaps'),
       fuelRemainingTime: $prop('DataCorePlugin.Computed.Fuel_RemainingTime'),
       avgFuelConsumption: $prop('DataCorePlugin.Computed.Fuel_LitersPerLap'),
-      refuel: $prop('IRacingExtraProperties.iRacing_FuelToAddPushing'),
+      refuel: $prop('IRacingExtraProperties.iRacing_FuelToAdd'),
       gear: $prop('DahlDesign.SmoothGear'),
       rpm: $prop('Rpms'),
       speed: $prop('SpeedLocal'),
       redlineReached: $prop('CarSettings_RPMRedLineReached'),
+      mgukBatteryPercent: $prop('GameRawData.Telemetry.EnergyERSBatteryPct'),
     },
+    telemetry: {
+      throttle: $prop('Throttle'),
+      brake: $prop('Brake'),
+      clutch: $prop('Clutch'),
+    },
+  };
+}
+
+function tsrGetGameData() {
+  return {
+    isRunning: $prop('DataCorePlugin.GameRunning'),
   };
 }

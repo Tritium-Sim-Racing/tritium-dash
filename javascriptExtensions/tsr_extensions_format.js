@@ -16,13 +16,13 @@ function formatIRating(iRating) {
 ///////////////////////////////////////////////////////////////////////////
 
 function formatOverallDriverIndex(overallDriverIndex) {
-  return String(overallDriverIndex).padStart(2, '0');
+  return padStartTwoCharacters(overallDriverIndex);
 }
 
 ///////////////////////////////////////////////////////////////////////////
 
 function formatClassDriverIndex(classDriverIndex) {
-  return String(classDriverIndex).padStart(2, '0');
+  return padStartTwoCharacters(classDriverIndex);
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -60,7 +60,8 @@ function padStartTwoCharacters(number) {
 ///////////////////////////////////////////////////////////////////////////
 
 function formatSectorDelta(sectorIndex) {
-  return timespantoseconds(tsrGetPlayerData().sectorDeltas[sectorIndex - 1]) > 0
-    ? '+' + timespantoseconds(tsrGetPlayerData().sectorDeltas[sectorIndex - 1]).toFixed(3)
-    : timespantoseconds(tsrGetPlayerData().sectorDeltas[sectorIndex - 1]).toFixed(3);
+  const { sectorDeltas } = tsrGetPlayerData();
+  const sectorDeltaInSeconds = timespantoseconds(sectorDeltas[sectorIndex - 1]);
+
+  return sectorDeltaInSeconds > 0 ? '+' + sectorDeltaInSeconds.toFixed(3) : sectorDeltaInSeconds.toFixed(3);
 }
