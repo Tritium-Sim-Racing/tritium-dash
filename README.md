@@ -33,6 +33,7 @@ Each Module has various screens to display different data that you may find usef
 - Position
 - Name
 - Safety Rating
+- iRating
 - Last Lap
 - Last Lap Time Gained/Lost
 - Best Lap
@@ -73,17 +74,7 @@ Each Module has various screens to display different data that you may find usef
 - Launch Control Overlay
 - SF23 Overtake Mode Active Overlay
 - Input Telemetry Gauges
-
-**Configuration 1**
-
-- Delta to Session Personal Best
-- Gear
-- RPM
-- Speed
-- Redline Overlay
-- Launch Control Overlay
-- SF23 Overtake Mode Active Overlay
-- Driver Left/Right Indicator
+- Car Left/Right Indicators
 
 ### Car Settings Module
 **Based on Property Availability**
@@ -130,12 +121,12 @@ Each Module has various screens to display different data that you may find usef
 
 ### Navigation
 **Bind to Device Controls in Simhub** (can use touch or physical key binding)
-- Center Module => Dash Action A
+- Outer Gauges => Dash Action A
 - Left Module => Dash Action B
 - Right Module => Dash Action C
 - Top Module => Dash Action D
 
 #### Dependencies
-- Dahl Designs => [Download Here](https://github.com/andreasdahl1987/DahlDesignProperties/releases)
+- Dahl Designs => Packaged with release
 - Romain Rob iRacing Extra Properties => [Download Here
 ](https://drive.google.com/drive/folders/1AiIWHviD4j-_D-zgRrjJU1AFhJ_xmass)
