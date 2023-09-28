@@ -4,7 +4,7 @@ Each Module has various screens to display different data that you may find usef
 
 **Dash Action Associations**
 
- - Center Module: `Dash Action A`
+ - Outer Gauges: `Dash Action A`
  - Left Module: `Dash Action B`
  - Right Module: `Dash Action C`
  - Top Module: `Dash Action D`
