@@ -66,6 +66,15 @@ Each Module has various screens to display different data that you may find usef
 - Safety Rating
 - Gap to Class Leader
 
+**Advanced Fuel Info**
+
+- Fuel Remaining
+- Time Remaining (based on fuel remaining)
+- Laps Remaining (based on fuel remaining)
+- Refuel
+- Average Consumption
+- Excess Fuel Remaining at Finish
+
 ### Center Module
 **Configuration 1**
 
