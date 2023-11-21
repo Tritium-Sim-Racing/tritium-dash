@@ -1,8 +1,6 @@
 ## Getting Started
 [**Download The Dash Here**](https://github.com/Tritium-Sim-Racing/tritium-dash/releases)
 
-https://imgur.com/tPjWSvH
-
  ![Dash Image 1](https://i.imgur.com/tPjWSvH.png)
 #### Navigation
 Each Module has various screens to display different data that you may find useful.  The navigation can be controlled by physical buttons on your wheel, or via touch actions if your display is touchscreen.
